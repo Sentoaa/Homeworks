@@ -1,0 +1,39 @@
+{
+  "phonebook": [
+    {
+      "telephone number": "(067) 670 00 00",
+      "name": "Andrii",
+      "last name": "Potuznii",
+      "full name": "Andrii Potuznii",
+      "city": "Kharkiv"
+    },
+    {
+      "telephone number": "22",
+      "name": "22",
+      "last name": "22",
+      "full name": "22 22",
+      "city": "22"
+    },
+    {
+      "telephone number": "1111",
+      "name": "\u0421\u0435\u0440\u0433\u0456\u0439",
+      "last name": "\u041a",
+      "full name": "\u0421\u0435\u0440\u0433\u0456\u0439 \u041a",
+      "city": "\u041a\u0438\u0457\u0432"
+    },
+    {
+      "telephone number": "3333",
+      "name": "asdasd",
+      "last name": "asdasd",
+      "full name": "asdasd asdasd",
+      "city": "asdasdasd"
+    },
+    {
+      "telephone number": "123",
+      "name": "123",
+      "last name": "123",
+      "full name": "123 123",
+      "city": "123"
+    }
+  ]
+}
