@@ -21,6 +21,7 @@ class Library:
         self.book_name = book_name
         self.year = year
         self.author = author
+        author.books.append(self.book_name)
         self.book = {'name': self.book_name, 'year': self.year, 'author': self.author}
         self.books.append(self.book)
         self.authors.append(self.author)
@@ -64,19 +65,20 @@ class Book:
 
 
 library_1 = Library('First library', [], [])
-author_1 = Author('Ayn Rand', 'USA', '02.02.1905', ["Atlas Shrugged", 'The Fountainhead'])
-author_2 = Author('Robert Kiyosaki', 'USA', '08.04.1947', ['Rich dad', 'Why We Want You to Be Rich: Two Men, One Message'])
+author_1 = Author('Ayn Rand', 'USA', '02.02.1905', [])
+author_2 = Author('Robert Kiyosaki', 'USA', '08.04.1947', [])
 book_1 = Book('Rich dad, poor dad', 1997, author_2)
 book_2 = Book('Why We Want You to Be Rich: Two Men, One Message', 2006, author_2)
-library_1.new_book("Kobzar", 1860, 'Taras Shevchenko')
-library_1.new_book("Atlas Shrugged", 1957, 'Ayn Rand')
-library_1.new_book("Atlas Shrugged", 1860, 'Ayn Rand')
+library_1.new_book("Rich dad, poor dad", 1997, author_2)
+library_1.new_book("Atlas Shrugged", 1957, author_1)
+library_1.new_book("Atlas Shrugged", 1997, author_1)
 
 
 print(library_1.books)
-print(library_1.group_by_year(1860))
-print(library_1.group_by_author(author_1))
-print(Book.amount_of_books)
-print(library_1)
-print(repr(library_1))
-print(repr(book_1))
+print(author_2.books)
+# print(library_1.group_by_year(1860))
+# print(library_1.group_by_author(author_1))
+# print(Book.amount_of_books)
+# print(library_1)
+# print(repr(library_1))
+# print(repr(book_1))
