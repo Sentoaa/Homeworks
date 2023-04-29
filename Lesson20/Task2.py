@@ -78,16 +78,28 @@ class PhonbookTestCase(unittest.TestCase):
 
     def test_d_search(self):
         test_data = '22'
-        expected_output = print({
+        expected_output = {
             "telephone number": "22",
             "name": "1",
             "last name": "1",
             "full name": "1 1",
             "city": "1"
-        })
+        }
         with patch('sys.stdin', StringIO(test_data)):
             self.assertEqual(search(), expected_output)
 
-
+with open('Phonebook.json', "w") as file:
+    txt = {
+    "phonebook": [
+        {
+            "telephone number": "22",
+            "name": "3",
+            "last name": "3",
+            "full name": "3 3",
+            "city": "3"
+        }
+    ]
+}
+    json.dump(txt, file)
 
 # unittest.main()

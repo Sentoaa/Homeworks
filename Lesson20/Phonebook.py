@@ -74,14 +74,19 @@ def search():
         for txt in data['phonebook']:
             if txt['telephone number'] == search_data:
                 print(data['phonebook'][i])
+                return (data['phonebook'][i])
             if txt['name'] == search_data:
                 print(data['phonebook'][i])
+                return (data['phonebook'][i])
             if txt['last name'] == search_data:
                 print(data['phonebook'][i])
+                return (data['phonebook'][i])
             if txt['full name'] == search_data:
                 print(data['phonebook'][i])
+                return (data['phonebook'][i])
             if txt['city'] == search_data:
                 print(data['phonebook'][i])
+                return (data['phonebook'][i])
         i += 1
 
 
